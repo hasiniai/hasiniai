@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#6a11cb,#2575fc,#ff6a00,#ee0979);
+    background-size:400% 400%;
+    animation:bgAnimation 10s ease infinite;
+}
+
+@keyframes bgAnimation{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+}
+
+.profile-card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:30px;
+    color:white;
+    text-align:center;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    animation:fadeIn 1.5s ease;
+}
+
+.profile-card h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.profile-card h2{
+    margin-bottom:20px;
+    color:#f1f1f1;
+}
+
+.typing{
+    font-size:1.2rem;
+    color:#ffd700;
+    font-weight:bold;
+    min-height:40px;
+    margin-bottom:20px;
+}
+
+.education h3,
+.skills h3{
+    margin:20px 0;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:15px;
+    border-radius:12px;
+    margin:10px 0;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    background:rgba(255,255,255,0.3);
+}
+
+.skills ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skills li{
+    background:#ffffff30;
+    padding:10px 20px;
+    border-radius:25px;
+    transition:0.4s;
+}
+
+.skills li:hover{
+    background:#ffd700;
+    color:black;
+    transform:scale(1.1);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:600px){
+    .profile-card h1{
+        font-size:2rem;
+    }
+
+    .profile-card h2{
+        font-size:1rem;
+    }
+}
