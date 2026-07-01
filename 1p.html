@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Link JavaScript Example</title> 
+</head> 
+<body> 
+<h1>Hello from Dept of CAI</h1> 
+<center><h1>welcome to FSD-II Lab</h1></center> 
+src 
+a ribute, 
+<center><h1>Here we are Learning Full Stack Development using HTML,CSS,JAVASCRIPT 
+</h1></center> 
+<!-- Link to external JavaScript file --> 
+<script src="1p.js"></script> 
+</body> 
+</html>
