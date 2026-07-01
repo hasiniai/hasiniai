@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Three Types of Functions</title> 
+</head> 
+<body> 
+<h2>JavaScript Function Types</h2> 
+<button onclick="greet()">Call Function Declaration</button> 
+<button onclick="sayGoodbye()">Call Function Expression</button> 
+<button onclick="showThanks()">Call Arrow Function</button> 
+<p id="output"></p> 
+<script> 
+function greet() 
+{ 
+document.getElementById("output").textContent = "Hello from Function Declaration!"; 
+} 
+const sayGoodbye = function() 
+{ 
+document.getElementById("output").textContent = "Goodbye from Function Expression!"; 
+}; 
+const showThanks = () => 
+{ 
+document.getElementById("output").textContent = "Thanks from Arrow Function!"; 
+}; 
+</script> 
+</body> 
+</html>
